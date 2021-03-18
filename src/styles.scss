@@ -1,5 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Code+Pro&display=swap");
+@font-face {
+  font-family: Source Code Pro;
+  src: url(assets/SourceCodePro-Regular.ttf);
+}
+
+@font-face {
+  font-family: Open Sans;
+  src: url(assets/OpenSans-Regular.ttf);
+}
 
 html,
 body {
