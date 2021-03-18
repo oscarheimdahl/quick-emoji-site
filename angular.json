@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "quick-emoji": {
+    "quick-emoji-site": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "quick-emoji:build"
+            "browserTarget": "quick-emoji-site:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "quick-emoji:build:production"
+              "browserTarget": "quick-emoji-site:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "quick-emoji:build"
+            "browserTarget": "quick-emoji-site:build"
           }
         },
         "test": {
@@ -104,16 +104,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "quick-emoji:serve"
+            "devServerTarget": "quick-emoji-site:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "quick-emoji:serve:production"
+              "devServerTarget": "quick-emoji-site:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "quick-emoji"
+  "defaultProject": "quick-emoji-site"
 }

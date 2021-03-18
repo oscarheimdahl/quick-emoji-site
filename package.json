@@ -1,5 +1,5 @@
 {
-  "name": "quick-emoji",
+  "name": "quick-emoji-site",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --base-href=/; ngh"
+    "deploy": "ng build --prod --base-href='https://oscarheimdahl.github.io/quick-emoji-site/';npx angular-cli-ghpages - dir=dist "
   },
   "private": true,
   "dependencies": {
